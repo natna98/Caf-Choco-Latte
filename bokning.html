@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../stil/style.css">
+        <title>Cafe Choco-Latte</title>
+    </head>
+    
+    <body>
+        <header>
+                                                            
+          <h1>Café Choco-Latte</h1>                                             <!--Det översta på varje sida, dvs. sidhuvudet ligger inom headern-->
+          <h2>Fantastiskt kaffe & läckra bakverk</h2>
+      
+            <p> Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren.
+                Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.  
+                Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna. 
+            </p>
+
+            <nav>                           <!--Nav elementet är till för navigeringen till de olika sidorna i min webbsida. Jag använder elementet i syfte att gruppera webbsidans navigering, jag tyckte även det var lämpligt att den låg inom header taggen eftersom det används av varje sida-->
+                <ul>
+                    <li><a href="../index.html">Hem</a></li>
+                    <li><a href="chokladprovning.html">Chokladprovning</a>
+                <ul>
+                    <li><a href="bokning.html">Boka chokladprovning</a></li>
+
+                </ul>
+                    </li>
+                    <li><a href="kakaotradet.html">Om Kakaoträdet</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+    <main>
+        <section>
+
+            <header>        
+                <h2>Boka Chokladprovning</h2>
+            </header>
+
+            <form action="../index.html" method="post">  <!--Med form elementet berättar jag att det kommer ett formulär. Jag har valt att skicka tillbaka användaren till startsidan efter en fullgjord bokning-->
+                <fieldset>                                       <!--Fieldset använder jag för att gruppera innehållet i form av textrutor-->
+                    <legend>Välj datum:</legend>
+         
+                        <p>
+                            <input type="radio" id="trettiondeapril" name="datum" value="30 april" required>                 <!--Radiobutton används med ett required attribut på det första valet så att jag kan säkerställa att användaren väljer ett datum-->
+                            <label for="trettiondeapril">30 april:</label>                                                            <!--Label elementet används för att skapa en etikett som jag använder för att bestämma det som ska skrivas in i formuläret och med for attributet kopplas label till formuläret -->
+               
+                        </p>
+
+                        <p>
+                            <input type="radio" id= "andramaj" name="datum" value="2 maj"> 
+                            <label for="andramaj">2 maj:</label>
+                                
+                        </p>
+
+
+                        <p>
+                            <input type="radio" id="sjundemaj" name="datum" value="7 maj">
+                            <label for="sjundemaj">7 maj:</label>
+                
+                        </p>
+
+                        <p>
+                            <input type="radio" id="niondemaj" name="datum" value="9 maj">
+                            <label for="niondemaj">9 maj:</label>
+                
+                        </p>
+
+                        <p>
+                            <input type="radio" id="fjortondemaj" name="datum" value="14 maj">
+                            <label for="fjortondemaj">14 maj:</label>
+                            
+                        </p>
+
+                        <p>
+                            <input type="radio" id="sextondemaj" name="datum" value="16 maj">
+                            <label for="sextondemaj">16 maj:</label>
+                
+                        </p>
+
+                </fieldset>
+
+            
+            
+                <fieldset>
+                    <legend>Välj antal personer:</legend>
+                        <select name="antal" id="Antal">                            <!--Denna rad kod representerar min dropdown lista-->
+                            <option value="ett">1</option>
+                            <option value="två">2</option>
+                            <option value="tre">3</option>
+                            <option value="fyra">4</option>
+                            <option value="fem">5</option>
+                            <option value="sex">6</option>
+                            <option value="sju">7</option>
+                            <option value="åtta">8</option>
+                            <option value="nio">9</option>
+                            <option value="tio">10</option>
+                            <option value="elva">11</option>
+                            <option value="tolv">12</option>
+                        </select>  
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Fyll i dina uppgifter</legend>
+            
+           
+                        <p>
+                            <label for="Namn">Namn:</label>
+                            <input type="text" name="namn" id="Namn" required>
+                        </p>
+    
+
+                        <p>
+                            <label for="Email">E-mail:</label>
+                            <input type="email" name="email" id="Email" required pattern="\w@\w+.+\w">
+                        </p>
+
+                        <p>
+                            <label for="Mobil">Mobilnummer:</label>
+                            <input type="tel" name="mobil" id="Mobil" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </p>
+
+            
+                        <p>
+                            <label for="Meddelande">Meddelande:</label>
+                            
+                            <textarea  name="meddelande" id="Meddelande"></textarea>
+            
+                        </p>
+                
+                </fieldset>
+
+                    <p>                                                         <!--Här har vi bokningsknappen som används för att slutföra ens bokning-->
+                        <input type="submit" value="Boka">
+                    </p>
+
+            </form>
+    
+        </section>
+    </main>
+            <hr>
+        <footer><br>@ Copyright 2022 | Cafe Choco-Latte</footer>
+    </body>
+
+</html>
